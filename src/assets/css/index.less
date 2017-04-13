@@ -1,0 +1,96 @@
+@dark-green: #407B79;
+@light-green: #79A3A0;
+
+*  {
+	margin: 0;
+	padding: 0;
+	font-size: 1rem;
+	transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-webkit-transition: all 300ms ease;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+a {
+	text-decoration: none;
+	font-size: 1rem;
+	font-weight: 400;
+	color: inherit;
+}
+h1 {
+	font-size: 2.2rem;
+	color: @dark-green;
+	margin-bottom: 1rem;
+}
+h3 {
+	font-size: 1.8rem;
+	font-weight: 300;
+	margin-bottom: 1rem;
+	color: @dark-green;
+}
+
+p {
+	font-size: 1rem;
+	font-weight: 400;
+	margin-bottom: 0.5rem;
+	line-height: 1.5rem;
+}
+body {
+	background: url(/assets/image/gradient.svg) no-repeat fixed, url(/assets/image/sky-left.png) 0 0 no-repeat fixed, url(/assets/image/sky-right.png) 0 0 no-repeat fixed, #B4CDD9;
+	background-position: center top, top left, top right;
+	position: relative;
+
+
+}
+body, main, footer {
+	width: 100%;
+	overflow-x: hidden;
+}
+header  {
+	img {
+		width: 100%;
+	}
+}
+section {
+	padding: 6%;
+	box-sizing: border-box;
+}
+.programs {
+	div.box {
+		padding: 2rem;
+		width: 100%;
+		background-color: rgba(255,255,255,0.5);
+		box-sizing: border-box;
+		min-height: 270px;
+	}
+}
+
+// buttons
+
+.learn-more {
+	border: 1px solid @dark-green;
+	background: @light-green;
+	color: white;
+	padding: 0.5rem;
+	text-align: center;
+	width: 50%;
+	display: block;
+	margin-top: 1rem;
+	&:hover {
+		background: none;
+		color: inherit;
+		border: 1px solid @dark-green;
+	}
+}
+
+footer {
+	section {
+		width: 65%;
+		margin: auto;
+	}
+
+	text-align: center;
+	p {
+		font-size: 0.8rem;
+	}
+}
