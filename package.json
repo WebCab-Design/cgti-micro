@@ -1,0 +1,24 @@
+{
+  "name": "cgti-micro",
+  "version": "1.0.0",
+  "description": "CGTI Micro informational site",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"serve": "muleify serve -w src dist",
+	"build": "rm -r docs/* && muleify pack src docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebCab-Design/cgti-micro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WebCab-Design/cgti-micro/issues"
+  },
+  "homepage": "https://github.com/WebCab-Design/cgti-micro#readme"
+}

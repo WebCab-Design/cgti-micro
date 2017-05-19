@@ -15,7 +15,7 @@ a {
   color: inherit;
 }
 h1 {
-  font-size: 2.2rem;
+  font-size: 3.2rem;
   color: #407B79;
   margin-bottom: 1rem;
 }
@@ -31,45 +31,103 @@ p {
   margin-bottom: 0.5rem;
   line-height: 1.5rem;
 }
-body {
-  background: url(/assets/image/gradient.svg) no-repeat fixed, url(/assets/image/sky-left.png) 0 0 no-repeat fixed, url(/assets/image/sky-right.png) 0 0 no-repeat fixed, #B4CDD9;
-  background-position: center top, top left, top right;
-  position: relative;
-}
 body,
 main,
 footer {
   width: 100%;
   overflow-x: hidden;
 }
-header img {
+header {
+  position: absolute;
+  top: 0;
+  z-index: 50;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.logo {
+  max-width: 200px;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+}
+.call {
+  color: white;
+  float: right;
+  margin-right: 1rem;
+}
+.call p {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+.call h3 {
+  margin: 0;
+  color: white;
 }
 section {
   padding: 6%;
   box-sizing: border-box;
 }
+.slider > div img {
+  width: 100%;
+}
+.overlay-text {
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.overlay-text h1 {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 4px 3px 14px #000;
+  margin-bottom: 0;
+}
+.overlay-text h3 {
+  font-size: 1.5rem;
+  color: white;
+  background-color: #407B79;
+  padding: 0.3rem;
+}
+.overlay-text h3 span {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
 .programs div.box {
-  padding: 2rem;
+  padding: 1rem;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.5);
   box-sizing: border-box;
   min-height: 270px;
+  font-size: 1.1rem;
+}
+.programs img {
+  width: 100%;
+}
+form {
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+form input,
+form textarea {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+form label,
+form select {
+  display: block;
 }
 .learn-more {
-  border: 1px solid #407B79;
-  background: #79A3A0;
-  color: white;
-  padding: 0.5rem;
-  text-align: center;
-  width: 50%;
-  display: block;
+  color: #222;
   margin-top: 1rem;
+  font-weight: 900;
 }
 .learn-more:hover {
+  text-decoration: underline;
   background: none;
   color: inherit;
-  border: 1px solid #407B79;
 }
 footer {
   text-align: center;
