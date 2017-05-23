@@ -103,10 +103,27 @@ section {
 }
 .programs img {
   width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+.form-sec {
+  text-align: center;
+  background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/b_rgb:000,c_fill,g_center,h_900,o_55,w_1900/v1495228772/cgti/cgti_nov_2016_photography_by_jacquelynn_buck.jpg') no-repeat fixed;
+  background-position: center;
+}
+.form-sec h1 {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 4px 3px 14px #000;
+  margin-bottom: 0;
+}
+.form-sec h3 {
+  font-size: 2.2rem;
+  color: white;
+  padding: 0.3rem;
 }
 form {
   padding: 2rem;
-  background-color: rgba(255, 255, 255, 0.5);
 }
 form input,
 form textarea {
@@ -114,10 +131,41 @@ form textarea {
   padding-bottom: 2%;
   margin-bottom: 0.5rem;
   width: 100%;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+  background: none;
+}
+form input:focus,
+form textarea:focus {
+  outline: none !important;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+form input:focus::placeholder,
+form textarea:focus::placeholder {
+  font-size: 0.8rem;
 }
 form label,
 form select {
   display: block;
+}
+input::placeholder,
+textarea::placeholder,
+label {
+  color: white;
+  font-size: 1.2rem;
+  text-align: left;
+  font-weight: 100;
+}
+input[type='submit'] {
+  background-color: white;
+  color: #222;
+  padding: 1rem;
+  border-bottom: none;
+}
+input[type='submit']:hover {
+  background-color: #e6e6e6;
+  cursor: pointer;
 }
 .learn-more {
   color: #222;
