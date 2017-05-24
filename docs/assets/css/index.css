@@ -93,6 +93,10 @@ section {
   font-weight: bold;
   font-size: 1.5rem;
 }
+.programs {
+  max-width: 1200px;
+  margin: auto;
+}
 .programs div.box {
   padding: 1rem;
   width: 100%;
