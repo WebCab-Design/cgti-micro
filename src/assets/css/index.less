@@ -1,6 +1,7 @@
 @dark-green: #407B79;
 @light-green: #79A3A0;
 @black: #222;
+@light-grey: #f6f6f6;
 
 *  {
 	margin: 0;
@@ -111,7 +112,7 @@ section {
 	div.box {
 		padding: 1rem;
 		width: 100%;
-		background-color: rgba(255,255,255,0.5);
+		// background-color: rgba(255,255,255,0.5);
 		box-sizing: border-box;
 		min-height: 270px;
 		font-size: 1.1rem;
@@ -120,6 +121,30 @@ section {
 		width: 100%;
 		max-height: 300px;
 		object-fit: cover;
+	}
+}
+.more {
+	display: none;
+	&.active {
+		display: block;
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		width: 33%;
+		transform: translate(-50%);
+		background-color: white;
+		padding: 3%;
+		box-shadow: 0px 0px 20px #000;
+	}
+	.close-button {
+		position: absolute;
+		top: 0;
+		left: 100%;
+		font-size: 1.3rem;
+		color: white;
+		padding: 0.5rem;
+		background-color: @light-green;
+		cursor: pointer;
 	}
 }
 //form
