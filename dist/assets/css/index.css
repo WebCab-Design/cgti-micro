@@ -111,14 +111,17 @@ section {
 }
 .more {
   display: none;
+  z-index: 0;
+  opacity: 0;
 }
 .more.active {
+  z-index: 1;
+  opacity: 1;
   display: block;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  width: 33%;
-  transform: translate(-50%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 6%;
   background-color: white;
   padding: 3%;
   box-shadow: 0px 0px 20px #000;
@@ -129,7 +132,7 @@ section {
   left: 100%;
   font-size: 1.3rem;
   color: white;
-  padding: 0.5rem;
+  padding: 1rem;
   background-color: #79A3A0;
   cursor: pointer;
 }

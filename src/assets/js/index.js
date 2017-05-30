@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', function (){
 			thisMore.classList.toggle('active');
 			document.body.style = 'overflow-y: hidden';
 		});
-		
+
 		closeButton.addEventListener('click', function () {
-			more.classList.toggle('active');
+			this.parentNode.parentNode.classList.toggle('active');
 			document.body.style = 'overflow-y: inherit';
 			console.log('close me');
 		});
