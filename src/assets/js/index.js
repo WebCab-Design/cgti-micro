@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', function (){
 
 		closeButton.classList.add('close-button');
 		closeButton.innerText = 'X';
-		more.append(closeButton);
-		// console.log(more);
+		more.insertBefore(closeButton, more.childNodes[0]);
+		// console.log(more.childNodes[0]);
 
 		btns.addEventListener('click', function () {
 			var thisMore = this.parentNode.querySelector('.more');

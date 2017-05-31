@@ -248,12 +248,19 @@ footer p {
     color: white;
     background-color: #407B79;
   }
+  .more {
+    max-height: 80%;
+    overflow-y: auto;
+  }
   .more .call-icon {
     max-width: 100%;
   }
   .more .close-button {
-    position: absolute;
-    top: 100%;
-    left: 0;
+    width: 0;
+    position: initial;
+    padding-top: 1rem;
+    padding-right: 1.6rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
   }
 }
