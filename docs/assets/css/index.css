@@ -249,7 +249,7 @@ footer p {
     background-color: #407B79;
   }
   .more {
-    max-height: 80%;
+    max-height: 90%;
     overflow-y: auto;
   }
   .more .call-icon {
