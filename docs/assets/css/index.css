@@ -1,3 +1,6 @@
+.row {
+  margin-right: 0;
+}
 * {
   margin: 0;
   padding: 0;
@@ -45,14 +48,13 @@ header {
   background-color: rgba(0, 0, 0, 0.4);
 }
 .logo {
-  max-width: 200px;
+  max-width: 25%;
   padding-left: 1rem;
   padding-top: 0.5rem;
 }
 .call {
   color: white;
   float: right;
-  margin-right: 1rem;
 }
 .call p {
   margin: 0;
@@ -136,6 +138,16 @@ section {
   background-color: #79A3A0;
   cursor: pointer;
 }
+.more .call-icon {
+  max-width: 25%;
+  font-size: 1.3rem;
+  font-weight: 100;
+  text-align: center;
+  border-radius: 30px;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 1px solid #79A3A0;
+}
 .form-sec {
   text-align: center;
   background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/b_rgb:000,c_fill,g_center,h_900,o_55,w_1900/v1495228772/cgti/cgti_nov_2016_photography_by_jacquelynn_buck.jpg') no-repeat;
@@ -216,4 +228,32 @@ footer section {
 }
 footer p {
   font-size: 0.8rem;
+}
+@media only screen and (max-width: 500px) {
+  .call p {
+    font-size: 0.8rem;
+    font-weight: 900;
+    line-height: normal;
+  }
+  .call h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: white;
+  }
+  .overlay-text h1 {
+    font-size: 2rem;
+  }
+  .overlay-text h3 {
+    font-size: 0.9rem;
+    color: white;
+    background-color: #407B79;
+  }
+  .more .call-icon {
+    max-width: 100%;
+  }
+  .more .close-button {
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
 }

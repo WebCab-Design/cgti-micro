@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', function (){
 
 		closeButton.classList.add('close-button');
 		closeButton.innerText = 'X';
-		more.firstElementChild.append(closeButton);
+		more.append(closeButton);
+		// console.log(more);
 
 		btns.addEventListener('click', function () {
 			var thisMore = this.parentNode.querySelector('.more');
@@ -18,9 +19,9 @@ document.addEventListener('DOMContentLoaded', function (){
 		});
 
 		closeButton.addEventListener('click', function () {
-			this.parentNode.parentNode.classList.toggle('active');
+			this.parentNode.classList.toggle('active');
+			console.log(this.parentNode);
 			document.body.style = 'overflow-y: inherit';
-			console.log('close me');
 		});
 	}
 });
