@@ -47,7 +47,7 @@ header {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
 }
-.logo {
+.logo > svg {
   max-width: 25%;
   padding-left: 1rem;
   padding-top: 0.5rem;
@@ -230,6 +230,10 @@ footer p {
   font-size: 0.8rem;
 }
 @media only screen and (max-width: 500px) {
+  .logo > svg {
+    max-width: 45%;
+    padding-left: 0.5rem;
+  }
   .call p {
     font-size: 0.8rem;
     font-weight: 900;
