@@ -267,4 +267,7 @@ footer p {
     padding-bottom: 1rem;
     padding-left: 1rem;
   }
+  footer section {
+    width: 100%;
+  }
 }
