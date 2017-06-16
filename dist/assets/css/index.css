@@ -34,6 +34,13 @@ p {
   margin-bottom: 0.5rem;
   line-height: 1.5rem;
 }
+ul {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+ul > li {
+  line-height: 1.5rem;
+}
 body,
 main,
 footer {
