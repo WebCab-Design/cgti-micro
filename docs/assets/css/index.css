@@ -217,6 +217,11 @@ input[type='submit']:hover {
   background-color: #e6e6e6;
   cursor: pointer;
 }
+.response {
+  color: #ffffff;
+  font-size: 2rem;
+  padding: 15%;
+}
 .learn-more {
   color: #222;
   margin-top: 1rem;

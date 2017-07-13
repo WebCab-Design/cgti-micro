@@ -25,4 +25,32 @@ document.addEventListener('DOMContentLoaded', function (){
 
 		});
 	}
+
+	var form = document.querySelector('.form');
+	if (form) {
+		Astatine.submit({
+			query: form,
+			method: 'POST',
+			responseType: 'json',
+			action: 'https://www.enformed.io/t9npounr',
+			prepare: function (data, resolve, reject) {
+				if (!data['*default_email']) data['*default_email'] = 'dpreston@cgtiaz.org';
+				// if (!data['*cc']) data['*cc'] = 'jburns@webcabdesign.com';
+
+			resolve(data);
+			},
+			complete: function (error, success) {
+				var response = document.querySelector('.response');
+				if (error) {
+					console.log(error);
+					response.style.color = 'red';
+					response.innerText = 'Error Plese See Console';
+				} else {
+					form.style.display = 'none';
+					response.style.color = '#ffffff';
+					response.innerText = 'Form Is Submitted';
+				}
+			}
+		});
+	}
 });
