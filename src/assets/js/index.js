@@ -15,13 +15,13 @@ document.addEventListener('DOMContentLoaded', function (){
 		btns.addEventListener('click', function () {
 			var thisMore = this.parentNode.querySelector('.more');
 			thisMore.classList.toggle('active');
-			document.body.setAttribute('style', 'overflow-y: hidden;');
+			document.body.setAttribute('style', 'overflow-y: hidden; -webkit-overflow-scrolling: auto;');
 		});
 
 		closeButton.addEventListener('click', function () {
 			this.parentNode.classList.toggle('active');
 			console.log(this.parentNode);
-			document.body.setAttribute('style', 'overflow-y: inherit;');
+			document.body.setAttribute('style', 'overflow-y: inherit; -webkit-overflow-scrolling: scroll;');
 
 		});
 	}
